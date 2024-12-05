@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="design.css">
+</head>
+<body>
+  <header id="home">
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#Home">Home</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="theme-toggle">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Home/About Section -->
+    <section id="about">
+      <h1 class="typing-effect">Hello, I'm Adeoluwa Afolabi!</h1>
+      <p>A passionate college student and web developer.</p>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project-filter">
+        <button class="filter-btn" data-category="all">All</button>
+        <button class="filter-btn" data-category="web">Web Development</button>
+        <button class="filter-btn" data-category="python">Python</button>
+      </div>
+      <div class="project-container">
+        <div class="project-card" data-category="web">
+          <h3>TODOLIST APP</h3>
+          <p>I developed a responsive and user-friendly interface using HTML, and CSS allowing users to add, complete and 
+            remove tasks efficiently </p>
+            <p>Technology Used: HTML, CSS & JavaScript</p>
+        </div>
+        <div class="project-card" data-category="python">
+          <h3>GUI Calculator</h3>
+          <p>I developed a mini GUI calculator, where operations like addition, subtraction, multiplication and divisions are performed.</p>
+          <p>Technology Used:Python & Tkinter</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="skills-chart">
+        <div class="skill" data-skill="HTML">HTML</div>
+        <div class="skill" data-skill="CSS">CSS</div>
+        <div class="skill" data-skill="JavaScript">JavaScript</div>
+        <div class="skill" data-skill="Python">Python</div>
+        <div class="skill" data-skill="Data Structures & Algorithms">DSA</div>
+        <div class="skill" data-skill="Animation">Animation</div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <form id="contact-form">
+        <input type="text" id="name" placeholder="Your Name" required>
+        <input type="email" id="email" placeholder="Your Email" required>
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Adeoluwa Afolabi. All Rights Reserved.</p>
+  </footer>
+
+  <script src="javascript.js"></script>
+</body>
+</html>
